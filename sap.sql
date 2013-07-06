@@ -1053,11 +1053,11 @@ COPY fase (id, nro_orden, estado, nombre, descripcion, fecha_inicio, fecha_fin, 
 4	4	P	Implantacion	Implementacion	2013-06-22	2013-07-22	1
 1	1	L	Analisis	Analisis de Requerimientos	2013-02-02	2013-04-05	1
 2	2	L	Diseño	Diseño de partes	2013-04-05	2013-04-25	1
-7	3	P	Ejecucion	Ejecicion	2013-06-01	2013-07-01	2
 5	1	A	Estudio	Estudio- reconocimiento del problema	2013-05-02	2013-05-22	2
 6	2	A	Creacion	Creacion	2013-05-22	2013-06-22	2
 8	1	P	fase 1	fase uno	2013-05-02	2013-07-06	23
 9	2	P	fase 2	fase 2	2013-05-02	2013-07-06	23
+7	3	L	Ejecucion	Ejecicion	2013-06-01	2013-07-01	2
 \.
 
 
@@ -1294,6 +1294,9 @@ COPY item (id, id_usuario, id_fase, id_tipo_item, version, codigo, nombre, descr
 335	12	8	13	1	IT-2 TEST	ITEM 2	ITEM 2	I	3	2013-06-23	156.00	\\x687474703a2f2f7665727473747564696f732e636f6d2f626c6f672f6e65772d666c61736b2d736974652f0d0a687474703a2f2f7065657765652e72656164746865646f63732e6f72672f656e2f322e302e322f7065657765652f6578616d706c652e68746d6c0d0a687474703a2f2f6e65742e74757473706c75732e636f6d2f7475746f7269616c732f707974686f6e2d7475746f7269616c732f616e2d696e74726f64756374696f6e2d746f2d707974686f6e732d666c61736b2d6672616d65776f726b2f0d0a687474703a2f2f6e65742e74757473706c75732e636f6d2f7475746f7269616c732f707974686f6e2d7475746f7269616c732f616e2d696e74726f64756374696f6e2d746f2d707974686f6e732d666c61736b2d6672616d65776f726b2f0d0a68747470733a2f2f666c61736b2e72656164746865646f63732e6f72672f656e2f302e312f7475746f7269616c2f0d0a0d0a0d0a687474703a2f2f7777772e63617073756e6c6f636b2e6e65742f323031312f30352f636f64696e672d776974682d666c61736b2d616e642d73716c616c6368656d792e68746d6c0d0a687474703a2f2f7777772e6d61726d616b6f6964652e6f72672f646f776e6c6f61642f7465616368696e672f6173642f6173642d666c61736b2d7475746f7269616c2e7064660d0a687474703a2f2f7777772e6a61766132732e636f6d2f5475746f7269616c2f507974686f6e2f303434305f5f4347492d5765622f4c6f67696e666f726d2e68746d0d0a687474703a2f2f707974686f6e2e6d616a6962752e6f72672f70726567756e7461732f3538312f63726561722d756e2d6c6f67696e	text/plain
 336	12	9	14	1	IT- 3 TEST	ITEM 3	ITEM 3	I	1	2013-06-23	13.00	\\x687474703a2f2f7665727473747564696f732e636f6d2f626c6f672f6e65772d666c61736b2d736974652f0d0a687474703a2f2f7065657765652e72656164746865646f63732e6f72672f656e2f322e302e322f7065657765652f6578616d706c652e68746d6c0d0a687474703a2f2f6e65742e74757473706c75732e636f6d2f7475746f7269616c732f707974686f6e2d7475746f7269616c732f616e2d696e74726f64756374696f6e2d746f2d707974686f6e732d666c61736b2d6672616d65776f726b2f0d0a687474703a2f2f6e65742e74757473706c75732e636f6d2f7475746f7269616c732f707974686f6e2d7475746f7269616c732f616e2d696e74726f64756374696f6e2d746f2d707974686f6e732d666c61736b2d6672616d65776f726b2f0d0a68747470733a2f2f666c61736b2e72656164746865646f63732e6f72672f656e2f302e312f7475746f7269616c2f0d0a0d0a0d0a687474703a2f2f7777772e63617073756e6c6f636b2e6e65742f323031312f30352f636f64696e672d776974682d666c61736b2d616e642d73716c616c6368656d792e68746d6c0d0a687474703a2f2f7777772e6d61726d616b6f6964652e6f72672f646f776e6c6f61642f7465616368696e672f6173642f6173642d666c61736b2d7475746f7269616c2e7064660d0a687474703a2f2f7777772e6a61766132732e636f6d2f5475746f7269616c2f507974686f6e2f303434305f5f4347492d5765622f4c6f67696e666f726d2e68746d0d0a687474703a2f2f707974686f6e2e6d616a6962752e6f72672f70726567756e7461732f3538312f63726561722d756e2d6c6f67696e	text/plain
 337	13	9	14	1	IT 4 TEST	ITEM 4	ITEM 4	I	1	2013-06-23	45.00	\N	\N
+338	5	7	12	5	ITS-9	Informes de Prueba	informe 	R	2	2013-07-06	23.00	\N	\N
+339	5	7	12	6	ITS-9	Informes de Prueba	informe 	A	2	2013-07-06	23.00	\N	\N
+340	5	7	12	5	ITS-8	Circuito	Circuito	B	2	2013-07-06	12.00	\N	\N
 \.
 
 
@@ -1532,6 +1535,9 @@ COPY item_atributo (id, id_item, id_atributo, valor) FROM stdin;
 325	335	1	OJ
 326	336	2	NINGUNA
 327	337	2	NINGUNA
+328	338	1	ninguna
+329	339	1	ninguna
+330	340	1	ver
 \.
 
 
@@ -1539,14 +1545,14 @@ COPY item_atributo (id, id_item, id_atributo, valor) FROM stdin;
 -- Name: item_atributo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('item_atributo_id_seq', 327, true);
+SELECT pg_catalog.setval('item_atributo_id_seq', 330, true);
 
 
 --
 -- Name: item_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('item_id_seq', 337, true);
+SELECT pg_catalog.setval('item_id_seq', 340, true);
 
 
 --
@@ -1567,6 +1573,7 @@ COPY lb_item (id, id_linea_base, id_item) FROM stdin;
 82	11	311
 83	12	328
 84	12	329
+85	13	340
 \.
 
 
@@ -1574,7 +1581,7 @@ COPY lb_item (id, id_linea_base, id_item) FROM stdin;
 -- Name: lb_item_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('lb_item_id_seq', 84, true);
+SELECT pg_catalog.setval('lb_item_id_seq', 85, true);
 
 
 --
@@ -1588,6 +1595,7 @@ COPY linea_base (id, estado, descripcion, fecha_creacion, fecha_ruptura) FROM st
 10	V	LB Diseño 1	2013-06-22	\N
 11	V	LB Fase 1	2013-06-22	\N
 12	V	LB Fase 2	2013-06-22	\N
+13	V	LB Ejecucion1	2013-07-06	\N
 \.
 
 
@@ -1595,7 +1603,7 @@ COPY linea_base (id, estado, descripcion, fecha_creacion, fecha_ruptura) FROM st
 -- Name: linea_base_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('linea_base_id_seq', 12, true);
+SELECT pg_catalog.setval('linea_base_id_seq', 13, true);
 
 
 --
@@ -1901,7 +1909,6 @@ COPY relacion (id, id_tipo_relacion, id_item, id_item_duenho, fecha_creacion, fe
 256	3	316	317	2013-06-22	2013-06-22	E
 262	3	316	322	2013-06-22	2013-06-22	E
 263	3	316	323	2013-06-22	2013-06-22	E
-264	3	328	323	2013-06-22	2013-06-22	A
 257	3	309	316	2013-06-22	2013-06-22	E
 265	3	309	328	2013-06-22	2013-06-22	A
 261	2	318	321	2013-06-22	2013-06-22	E
@@ -1913,7 +1920,11 @@ COPY relacion (id, id_tipo_relacion, id_item, id_item_duenho, fecha_creacion, fe
 270	2	334	335	2013-06-23	\N	A
 271	3	310	328	2013-07-06	\N	A
 272	3	311	329	2013-07-06	\N	A
-273	3	329	327	2013-07-06	\N	A
+273	3	329	327	2013-07-06	\N	E
+274	3	329	338	2013-07-06	2013-07-06	E
+275	3	329	339	2013-07-06	2013-07-06	A
+264	3	328	323	2013-06-22	2013-06-22	E
+276	3	328	340	2013-06-22	2013-07-06	A
 \.
 
 
@@ -1921,7 +1932,7 @@ COPY relacion (id, id_tipo_relacion, id_item, id_item_duenho, fecha_creacion, fe
 -- Name: relacion_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('relacion_id_seq', 273, true);
+SELECT pg_catalog.setval('relacion_id_seq', 276, true);
 
 
 --
@@ -2006,6 +2017,9 @@ COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
 186	5	113
 187	6	112
 188	8	114
+190	6	47
+191	6	48
+192	6	49
 27	4	8
 28	4	7
 29	4	4
@@ -2020,6 +2034,12 @@ COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
 39	5	25
 40	5	26
 41	5	27
+193	6	50
+194	6	51
+195	6	52
+196	6	53
+197	6	54
+198	6	55
 53	5	36
 54	5	35
 55	5	34
@@ -2044,12 +2064,14 @@ COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
 75	6	59
 76	6	58
 77	6	57
+199	6	56
 79	6	70
 80	6	69
 81	6	68
 82	6	67
 84	6	65
 85	6	64
+200	6	26
 122	6	77
 123	6	76
 125	6	74
@@ -2090,7 +2112,7 @@ COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
 -- Name: rol_permiso_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('rol_permiso_id_seq', 189, true);
+SELECT pg_catalog.setval('rol_permiso_id_seq', 200, true);
 
 
 --
