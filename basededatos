@@ -1,0 +1,12 @@
+apt-get install postgresql-client-common
+apt-get install postgresql-client-9.1
+exportar
+/opt/PostgreSQL/9.1/bin# ./pg_dump db1 -U postgres > db1.sql
+
+importar
+$ sudo bash
+cp /opt/PostgreSQL/9.1/bin# 
+# su postgres
+$ ./psql -U postgres -d sap -f sap.sql
+
+
