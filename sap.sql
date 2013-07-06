@@ -1718,9 +1718,6 @@ COPY permiso (id, codigo, descripcion, id_recurso) FROM stdin;
 104	AGREGAR ITEM LINEA BASE	AGREGAR ITEM LINEA BASE F2 TEST	12
 26	BUSCAR LINEA BASE	BUSCAR LINEA BASE SICAP	2
 36	BUSCAR LINEA BASE	BUSCAR LINEA BASE TEST	10
-11	VER LINEA BASE	VER LINEA BASE RIOS	1
-23	VER LINEA BASE	VER LINEA BASE SICAP	2
-62	VER LINEA BASE	VER LINEA BASE TEST	10
 105	QUITAR ITEM LINEA BASE	QUITAR ITEM LINEA BASE F2 TEST	12
 107	ARCHIVO ITEM	ARCHIVO ITEM F1 TEST	11
 108	ARCHIVO ITEM	ARCHIVO ITEM F2 TEST	12
@@ -1728,6 +1725,9 @@ COPY permiso (id, codigo, descripcion, id_recurso) FROM stdin;
 110	ADMINISTRAR RELACION	ADMINISTRAR RELACION SICAP	2
 111	ADMINISTRAR RELACION	ADMINISTRAR RELACION TEST	10
 14	BUSCAR LINEA BASE	BUSCAR LINEA BASE RIOS	1
+112	VER LINEA BASE	VER LINEA BASE SICAP	2
+113	VER LINEA BASE	VER LINEA BASE  RIOS WEB	1
+114	VER LINEA BASE	VER LINEA BASE TEST	10
 \.
 
 
@@ -1735,7 +1735,7 @@ COPY permiso (id, codigo, descripcion, id_recurso) FROM stdin;
 -- Name: permiso_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('permiso_id_seq', 111, true);
+SELECT pg_catalog.setval('permiso_id_seq', 114, true);
 
 
 --
@@ -1743,9 +1743,9 @@ SELECT pg_catalog.setval('permiso_id_seq', 111, true);
 --
 
 COPY proyecto (id, id_usuario_lider, estado, nombre, descripcion, cant_miembros, fecha_inicio, fecha_fin, fecha_ultima_mod) FROM stdin;
-1	7	P	RiosWeb	Rios Java Web	3	2013-02-01	2013-06-22	2013-06-17
-2	8	P	Sicap	Sicap	3	2013-03-05	2013-06-22	2013-06-17
 23	12	N	proyectotest	proyecto para test	3	2013-05-02	2013-07-06	2013-06-23
+2	8	P	Sicap	Sicap	3	2013-03-05	2013-06-22	2013-06-17
+1	7	P	RiosWeb	Rios Java Web	3	2013-02-01	2013-06-22	2013-06-17
 \.
 
 
@@ -1988,24 +1988,24 @@ SELECT pg_catalog.setval('rol_id_seq', 10, true);
 --
 
 COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
-180	6	23
 3	5	16
 4	5	15
 5	5	14
 6	5	13
 7	5	12
-8	5	11
 9	5	10
 10	5	9
 11	5	8
 12	5	7
 13	5	4
 14	5	3
-181	8	62
 182	5	109
 183	6	110
 184	8	36
 185	8	111
+186	5	113
+187	6	112
+188	8	114
 27	4	8
 28	4	7
 29	4	4
@@ -2090,7 +2090,7 @@ COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
 -- Name: rol_permiso_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('rol_permiso_id_seq', 185, true);
+SELECT pg_catalog.setval('rol_permiso_id_seq', 189, true);
 
 
 --
@@ -2275,6 +2275,9 @@ COPY usuario_rol (id, id_rol, id_usuario, id_proyecto) FROM stdin;
 30	6	5	\N
 31	2	12	23
 32	1	11	\N
+36	3	8	2
+37	3	5	2
+38	3	6	2
 \.
 
 
@@ -2282,7 +2285,7 @@ COPY usuario_rol (id, id_rol, id_usuario, id_proyecto) FROM stdin;
 -- Name: usuario_rol_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('usuario_rol_id_seq', 35, true);
+SELECT pg_catalog.setval('usuario_rol_id_seq', 38, true);
 
 
 --
