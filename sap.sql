@@ -1911,6 +1911,9 @@ COPY relacion (id, id_tipo_relacion, id_item, id_item_duenho, fecha_creacion, fe
 269	2	329	332	2013-06-22	2013-06-22	E
 253	3	311	308	2013-06-22	2013-06-22	E
 270	2	334	335	2013-06-23	\N	A
+271	3	310	328	2013-07-06	\N	A
+272	3	311	329	2013-07-06	\N	A
+273	3	329	327	2013-07-06	\N	A
 \.
 
 
@@ -1918,7 +1921,7 @@ COPY relacion (id, id_tipo_relacion, id_item, id_item_duenho, fecha_creacion, fe
 -- Name: relacion_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('relacion_id_seq', 270, true);
+SELECT pg_catalog.setval('relacion_id_seq', 273, true);
 
 
 --
@@ -2013,7 +2016,6 @@ COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
 34	5	20
 35	5	21
 36	5	22
-37	5	23
 38	5	24
 39	5	25
 40	5	26
@@ -2038,7 +2040,6 @@ COPY rol_permiso (id, id_rol, id_permiso) FROM stdin;
 70	5	38
 71	5	37
 72	6	63
-73	6	62
 74	6	60
 75	6	59
 76	6	58
